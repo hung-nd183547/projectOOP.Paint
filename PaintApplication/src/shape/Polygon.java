@@ -8,9 +8,8 @@ package shape;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 
-
- /**       
- * hình đa giác
+/**
+ * hinh da giac
  * @author Phuc
  */
 public class Polygon extends Shape implements DrawType {
@@ -27,7 +26,7 @@ public class Polygon extends Shape implements DrawType {
 
     @Override
     public void draw(Graphics2D g2d) {
-        
+        g2d.setColor(strokeColor);
         for(int i=0;i<listLine.size();i++)
         {
             listLine.get(i).draw(g2d);
